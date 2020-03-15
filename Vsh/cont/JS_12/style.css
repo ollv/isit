@@ -1,0 +1,30 @@
+#slider {
+	width: 310px;
+	height: 200px;
+	border: 0px solid black;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+#polosa {
+	width: 641px;
+	position: relative;
+
+
+	left = 0;
+	transition: all ease 1s;
+	height: 200px;
+	bottom: inherit;
+
+}
+
+#polosa img {
+	float: left;
+
+}
+
+#polosa::after {
+	content: "";
+	display:  block;
+	clear: both;
+}

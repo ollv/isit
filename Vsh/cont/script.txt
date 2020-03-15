@@ -1,0 +1,26 @@
+<span class="img-container">
+ <div  style="background-image: 
+url(imaje/Dania.jpg);" onclick="window.location.href='http://ollvisit.sytes.net/system0.htm'" ></div>
+ <h1><a href="cont/vadym.html">+360638417038</a></h1>
+ <p><a href="cont/vadym.html">Danja</a></p>
+</span>
+
+============================================
+
+/* CSS - simple.css днаюбхрэ */
+
+span.img-container:hover a {
+ color: #fff;
+}
+span.img-container a {
+ color: #000;
+ text-decoration: unset;
+}
+
+/* HTML */
+
+<h1>
+ <a href="cont/vadym.html">
+  +360638417038
+ </a>
+</h1>

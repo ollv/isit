@@ -1,0 +1,106 @@
+<html>
+<head>
+<!-- TemplateBeginEditable name="doctitle" --><!-- TemplateEndEditable -->  
+<title>Danja</title>
+
+<meta charset=utf-8">
+	<link rel="stylesheet" href="JS_12/style.css">
+	<script src="js/cena.js" defer></script>
+	<script src="JS_12/1.js" defer></script>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<!-- TemplateBeginEditable name="head" --> <!-- TemplateEndEditable --> <!-- TemplateParam name="ShowHorizontalRule" type="boolean" value="false" --> 
+<!-- TemplateParam name="FormMethod" type="text" value="post" --> 
+<!-- TemplateParam name="FormAction" type="text" value="" --> <!-- TemplateParam name="FormName" type="text" value="form1" --> 
+<!-- TemplateParam name="src" type="text" value="" --> <!-- TemplateParam name="alt" type="text" value="image" --> 
+<!-- TemplateParam name="name" type="text" value="image" --> <!-- TemplateParam name="width" type="text" value="30" --> 
+<!-- TemplateParam name="height" type="text" value="30" -->
+<!--link href="css/template.css" rel="stylesheet" type="text/css"-->
+<script type="text/JavaScript">
+<!--
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+<base>
+</head>
+<body class="sub">
+<script>
+function f1() {
+	var n,p;
+	n = document.getElementById('num1').value;
+	p = document.getElementById('out');
+	// 6a 7v           
+	n = parseInt(n);
+	if (n==30) {
+		p.innerHTML = 'цена $30+5%';
+	}
+	else if (n<30) {
+		p.innerHTML = 'нет';
+	}
+	else {
+		p.innerHTML = 'уступлю за $31';
+	}
+}
+</script>
+<div align="center">
+  <div id="slider">
+    <div id="polosa"  ><img onClick="sliderleft()" src="JS_12/images/U.png"><img onClick="sliderleft()" src="JS_12/images/card.png"> </div>
+  </div>
+    <p id="slider-left"></p>
+</div>
+<form name="@@FormName@@" method="@@FormMethod@@" action="@@FormAction@@">
+<div align="center">
+    <table width="35%" height="224" border="0" cellpadding="4" cellspacing="0" style="text-align: center">
+      <tr style="vertical-align: top" class="HeaderColor">
+        <td height="52" colspan="2"><!-- TemplateBeginEditable name="headerTitle" -->customer<!-- TemplateEndEditable --></td>
+        <td style="text-align: center"><!-- TemplateBeginEditable name="headerQuantity" -->amount<!-- TemplateEndEditable --></td>
+        <td style="text-align: center"><!-- TemplateBeginEditable name="headerPrice" -->score<!-- TemplateEndEditable --></td>
+        <td style="text-align: center"><!-- TemplateBeginEditable name="headerAction" -->deal<!-- TemplateEndEditable --> </td>
+      </tr>
+      <!-- TemplateBeginRepeat name="item" --> <!-- TemplateBeginIf cond="ShowHorizontalRule" -->
+      <tr style="vertical-align: top">
+        <td height="60" colspan="5" style="text-align: center"><!-- TemplateBeginEditable name="HorizontalRule" -->
+          <hr noshade>
+        <!-- TemplateEndEditable --></td>
+      </tr>
+      <!-- TemplateEndIf -->
+      <tr style="vertical-align: top">
+        <td width="3%" style="text-align: center">&nbsp;</td>
+        <td width="31%"><!-- TemplateBeginEditable name="description" -->
+          <p>seller</p>
+          <!-- TemplateEndEditable --></td>
+        <td width="21%" class="FooterColor" style="text-align: center"><!-- TemplateBeginEditable name="quantity" -->
+          <label for="label2"><button-live  onclick="f1()">по цене</button-live><span class="FooterColor" style="text-align: center">
+                    <input name="text" type="text" id="num1" value="" size="5" maxlength="4">
+          </span></label>
+        <!-- TemplateEndEditable --></td>
+        <td width="14%" style="text-align: right" id="out" class="FooterColor"><!-- TemplateBeginEditable name="price" -->стоимость<!-- TemplateEndEditable --></td>
+        <td width="31%" style="text-align: center"><!-- TemplateBeginEditable name="action" -->          
+          <input name="Submit12" type="button"  onClick='f1()'" value="yes" size="1" >
+          <br>
+          <a href="css/st.css">
+<input type="reset" name="Submit22" value="not">
+        </a><!-- TemplateEndEditable --> </td>
+      </tr>
+      <!-- TemplateEndRepeat -->
+      <tr style="vertical-align: middle" class="FooterColor">
+        <td style="text-align: right" colspan="2" ><!-- TemplateBeginEditable name="footerTotal" --> Total:<!-- TemplateEndEditable --></td>
+        <td width="21%" style="text-align: center" id="num1"><!-- TemplateBeginEditable name="footerQuantity" -->$<!-- TemplateEndEditable --></td>
+        <td width="14%" style="text-align: right" id="out"><!-- TemplateBeginEditable name="footerPrice" -->$<!-- TemplateEndEditable --></td>
+        <td width="31%" style="text-align: center"><!-- TemplateBeginEditable name="footerAction" -->
+          <div align="center">
+            <p>
+              <input name="Submit222" type="submit" onClick="MM_goToURL('parent','https://easypay.ua/moneytransfer');return document.MM_returnValue" value="Buy">
+            </p>
+          </div>
+        <!-- TemplateEndEditable --></td>
+      </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>
+
